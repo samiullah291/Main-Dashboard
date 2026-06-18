@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Logout Page</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(135deg,#4facfe,#00f2fe);
+}
+
+.logout-box{
+    background:#fff;
+    padding:40px;
+    border-radius:15px;
+    text-align:center;
+    width:350px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.2);
+}
+
+.logout-box h1{
+    color:#333;
+    margin-bottom:15px;
+}
+
+.logout-box p{
+    color:#666;
+    margin-bottom:25px;
+}
+
+.btn{
+    display:inline-block;
+    text-decoration:none;
+    background:#ff4d4d;
+    color:white;
+    padding:12px 30px;
+    border-radius:8px;
+    font-size:18px;
+    transition:0.3s;
+}
+
+.btn:hover{
+    background:#e60000;
+}
+</style>
+</head>
+<body>
+
+<div class="logout-box">
+    <h1>Logout</h1>
+    <p>Are you sure you want to logout?</p>
+    <a href="./index.html" class="btn" onclick="logout()">Logout</a>
+</div>
+
+<script>
+function logout() {
+    alert("You have been logged out successfully!");
+    // Example:
+    // window.location.href = "login.html";
+}
+</script>
+
+</body>
+</html>
